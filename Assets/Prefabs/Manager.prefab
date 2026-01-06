@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6673528402416521044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6673528402416521045}
+  - component: {fileID: 6673528402416521046}
+  - component: {fileID: 525760889}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6673528402416521045
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6673528402416521044}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.77632827, y: 2.213797, z: -0.78985274}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6673528402416521046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6673528402416521044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a679b7476ee70f44a40316a10dfd184, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  uiSlot1: {fileID: 0}
+  uiSlot2: {fileID: 0}
+  patternHolder: {fileID: 0}
+  items: []
+  mode: 1
+  waveszombos:
+  - 0
+  - 4
+  - 10
+  wavestime:
+  - 50
+  - 3
+  - 15
+  zomboPrefab: {fileID: 4777300502297938043, guid: e0f338ca3b025694c982ab220f545f4a,
+    type: 3}
+  wavesNumber: {fileID: 0}
+  timer: {fileID: 0}
+  howManyZombiesEverySecond: 1
+  timeBtwZombies: 10
+  materialMode: 0
+  mat: {fileID: 0}
+  timeBtwMats: 0
+  matsSpawnedAtOnce: 0
+  whereMatsSpawnMax: {x: 20, y: 20}
+  whereMatsSpawnMin: {x: -26, y: -26}
+  activationKey: 114
+  zombiesGatheredPerSecond: 0
+  doesReturnToMenu: 0
+  transition: {fileID: 525760889}
+  waitForSet: 0
+  whereZombosSpawnMax: {x: -56.6, y: 23.7}
+  whereZombosSpawnMin: {x: -31.1, y: 6.2}
+  healthBar: {fileID: 0}
+--- !u!114 &525760889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6673528402416521044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 173ab45430f9aa54eaf493b3b5c258de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToTransition: 0.25
+  timeBeforeDarkTransiton: 0
+  scene: Levels
+  animator: {fileID: 0}
+  usesCollider: 0
+  usesDarkTransition: 1
